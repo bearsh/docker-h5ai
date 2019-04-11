@@ -4,7 +4,7 @@ LABEL maintainer="Awesometic <awesometic.lab@gmail.com>" \
 
 RUN apk update
 RUN apk add --no-cache \
-    bash bash-completion supervisor tzdata \
+    bash supervisor tzdata \
     php7 php7-fpm php7-session php7-json php7-xml php7-mbstring php7-exif \
     php7-intl php7-gd php7-imagick php7-zip zip apache2-utils
 
