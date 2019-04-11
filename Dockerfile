@@ -1,6 +1,6 @@
 FROM nginx:1.15-alpine
-LABEL maintainer="Awesometic <awesometic.lab@gmail.com>" \
-      description="Lightweight h5ai 0.29 container with Nginx 1.15 & PHP 7 based on Alpine Linux."
+LABEL maintainer="bearsh <me@bearsh.org>" \
+      description="Lightweight h5ai 0.29.2 container with Nginx 1.15 & PHP 7 based on Alpine Linux."
 
 RUN apk update
 RUN apk add --no-cache \
