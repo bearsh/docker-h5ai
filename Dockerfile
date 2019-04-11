@@ -29,6 +29,8 @@ RUN mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.bak
 # Add shell script, patch files
 ADD config/init.sh /
 ADD config/h5ai.conf.htpasswd.patch /
+ADD config/h5ai-root_path.patch /
+RUN cd /usr/share/h5ai/_h5ai && patch -p1 -i /h5ai-root_path.patch
 # Set entry point file permission
 RUN chmod a+x /init.sh
 
